@@ -1,0 +1,53 @@
+# src: https://gist.github.com/pksunkara/988716
+
+# Framework Files #
+###################
+vendor/
+node_modules/
+wp-config.php
+.sass-cache/
+tmp/*
+
+# Application Files #
+###################
+.idea/*
+
+# Compiled source #
+###################
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+.Spotlight-V100
+.Trashes
