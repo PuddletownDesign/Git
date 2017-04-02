@@ -32,8 +32,8 @@
 [rebase]
     autosquash = true
 [merge]
-    tool = kaleidoscope
-[mergetool "kaleidoscope"]
+    tool = ksdiff
+[mergetool "ksdiff"]
     keepBackup = false
     trustExitCode = false
 [diff]
