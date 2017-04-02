@@ -4,7 +4,7 @@
     email = puddletowndesign@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
-    editor = "nano"
+    editor = "atom -w"
 [filter "media"]
     required = true
     clean = git media clean %f
