@@ -75,11 +75,11 @@
 	#############
 	d = diff
 	dc = diff --cached
-	dl = difftool
-	dlc = difftool --cached
-	dk = diff --check
+	dt = difftool
+	dtc = difftool --cached
+	dch = diff --check
 	dp = diff --patience
-	dck = diff --cached --check
+	dcc = diff --cached --check
 	#############
 	f = fetch
 	fo = fetch origin
@@ -94,7 +94,7 @@
 	#############
 	i = init
 	ib = init --bare
-	#############
+	############g #
 	l = log --graph --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	la = log --graph --all --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	lb = log --graph --branches --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
@@ -107,6 +107,7 @@
 	ma = merge --abort
 	mc = merge --continue
 	ms = merge --skip
+	m8 = merge-octopus
 	#############
 	o = checkout
 	oh = checkout --
