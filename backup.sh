@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Documents/Dev/ZSH
+cd ~/Config/Git
 git add .
 git commit -m "updated git preferences"
 git push origin linux
