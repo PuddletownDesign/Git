@@ -1,6 +1,10 @@
+[user]
+    name = Brent
+    username = PuddletownDesign
+    email = puddletowndesign@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
-    editor = "atom -w"
+    editor = "nano"
 [filter "media"]
     required = true
     clean = git media clean %f
