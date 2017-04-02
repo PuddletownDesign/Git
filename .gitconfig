@@ -69,6 +69,8 @@
 	cad = commit -a --amend
 	ced = commit --allow-empty --amend
 	#############
+	ch = cherry-pick
+	#############
 	cl = clone
 	#############
 	d = diff
@@ -108,6 +110,7 @@
 	#############
 	o = checkout
 	oh = checkout --
+	ohh = checkout HEAD
 	ob = checkout -b
 	#############
 	pr = prune -v
