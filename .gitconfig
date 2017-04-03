@@ -26,7 +26,7 @@
 #     added = yellow
 #     changed = green
 #     untracked = red
- 
+
 [rerere]
     enabled = true
     autoupdate = true
@@ -57,7 +57,7 @@
 	ams = am --skip
 	#############
 	b = branch
-	ba = branch -a
+	ba = branch -av
 	bd = branch -d
 	bD = branch -D
 	br = branch -r
@@ -159,17 +159,18 @@
 	#############
 	r = remote
 	ra = remote add
-	rr = remote rm
-	rv = remote -v
-	rm = remote rename
-	rp = remote prune
-	rs = remote show
 	rao = remote add origin
 	rau = remote add upstream
-	rso = remote show origin
-	rsu = remote show upstream
+	rr = remote rm
+	rrn = remote rename
+	rp = remote prune
 	rpo = remote prune origin
 	rpu = remote prune upstream
+	rm = remote rename
+	rv = remote -v
+	rs = remote show
+	rso = remote show origin
+	rsu = remote show upstream
 	#############
 	s = status
 	sb = status -s -b
