@@ -26,19 +26,27 @@
 #     added = yellow
 #     changed = green
 #     untracked = red
-
 [rerere]
     enabled = true
     autoupdate = true
 [rebase]
     autosquash = true
 [merge]
-    tool = ksdiff
-[mergetool "ksdiff"]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
     keepBackup = false
-    trustExitCode = false
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
 [diff]
-    tool = ksdiff
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+
 [push]
     # let's you say just `git push origin` to push the current branch
     default = current
@@ -61,7 +69,7 @@
 	bd = branch -d
 	bD = branch -D
 	br = branch -r
-	bv = branch -v
+	bv = branch -va
 	#############
 	c = commit -m
 	ca = commit --amend --no-edit
@@ -81,6 +89,7 @@
 	dch = diff --check
 	dp = diff --patience
 	dcc = diff --cached --check
+	ds = diff --staged
 	#############
 	f = fetch
 	fo = fetch origin
@@ -95,7 +104,7 @@
 	#############
 	i = init
 	ib = init --bare
-	############g #
+	#############
 	l = log --graph --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	la = log --graph --all --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	lb = log --graph --branches --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
@@ -134,6 +143,8 @@
 	plo = pull origin
 	plp = pull upstream
 	plom = pull origin master
+	plr = pull --rebase
+	plrom = pull --rebase origin master
 	plpm = pull upstream master
 	#############
 	pr = pull --rebase
@@ -157,12 +168,19 @@
 	remh = reset --mixed HEAD
 	resh = reset --soft HEAD
 	#############
+	rmc = rm --cached
+	#############
 	r = remote
 	ra = remote add
+	rrm = remote rm
+	rv = remote -v
+	rmv = remote rename
+	rp = remote prune
+	rs = remote show
 	rao = remote add origin
 	rau = remote add upstream
-	rr = remote rm
-	rrn = remote rename
+	rso = remote show origin
+	rsu = remote show upstream
 	rp = remote prune
 	rpo = remote prune origin
 	rpu = remote prune upstream
@@ -173,7 +191,7 @@
 	rsu = remote show upstream
 	#############
 	s = status
-	sb = status -s -b
+	ss = status -s -b
 	#############
 	st = stash
 	sta = stash apply
