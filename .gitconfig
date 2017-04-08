@@ -132,6 +132,7 @@
 	pso = push origin
 	psao = push --all origin
 	psfo = push -f origin
+	psot = push origin --tags
 	psuo = push -u origin
 	psom = push origin master
 	psfom = push -f origin master
@@ -201,6 +202,11 @@
 	stp = stash pop
 	sts = stash save
 	stw = stash show
+	#############
+	t = tag
+	ta = tag -am
+	tl = tag -l
+
 	#############
 	w = show
 	wp = show -p
