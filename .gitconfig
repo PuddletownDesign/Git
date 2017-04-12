@@ -63,11 +63,10 @@
 	ams = am --skip
 	#############
 	b = branch
-	ba = branch -av
 	bd = branch -d
 	bD = branch -D
 	br = branch -r
-	bv = branch -va
+	bv = branch -vva
 	#############
 	c = commit -m
 	ca = commit --amend --no-edit
@@ -90,6 +89,7 @@
 	ds = diff --staged
 	#############
 	f = fetch
+	fa = fetch --all
 	fo = fetch origin
 	foa = fetch origin --all
 	fu = fetch upstream
@@ -118,9 +118,10 @@
 	m8 = merge-octopus
 	#############
 	o = checkout
+	ob = checkout -b
 	oh = checkout --
 	ohh = checkout HEAD
-	ob = checkout -b
+	ot = checkout --track
 	#############
 	pr = prune -v
 	#############
@@ -130,6 +131,7 @@
 	pso = push origin
 	psao = push --all origin
 	psfo = push -f origin
+	psod = push origin --delete
 	psot = push origin --tags
 	psuo = push -u origin
 	psom = push origin master
