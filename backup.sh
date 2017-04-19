@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Config/Git
+cd ~/Documents/Dev/Git/
 git add .
 git commit -m "updated git preferences"
-git push origin linux
+git push origin mac

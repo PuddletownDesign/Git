@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ~/Documents/Dev/ZSH
-git pull origin linux
+cd ~/Documents/Dev/Git
+git pull origin mac
