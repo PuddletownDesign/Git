@@ -4,7 +4,7 @@
     email = puddletowndesign@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
-    editor = "nano"
+    editor = "atom -w"
 [filter "media"]
     required = true
     clean = git media clean %f
@@ -32,12 +32,19 @@
 [rebase]
     autosquash = true
 [merge]
-    tool = kaleidoscope
-[mergetool "kaleidoscope"]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
     keepBackup = false
-    trustExitCode = false
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[mergetool]
+	prompt = false
 [diff]
-    tool = kdiff3
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
 [push]
     # let's you say just `git push origin` to push the current branch
     default = current
@@ -56,11 +63,10 @@
 	ams = am --skip
 	#############
 	b = branch
-	ba = branch -a
 	bd = branch -d
 	bD = branch -D
 	br = branch -r
-	bv = branch -v
+	bv = branch -vva
 	#############
 	c = commit -m
 	ca = commit --amend --no-edit
@@ -69,17 +75,21 @@
 	cad = commit -a --amend
 	ced = commit --allow-empty --amend
 	#############
+	ch = cherry-pick
+	#############
 	cl = clone
 	#############
 	d = diff
 	dc = diff --cached
-	dl = difftool
-	dlc = difftool --cached
-	dk = diff --check
+	dt = difftool
+	dtc = difftool --cached
+	dch = diff --check
 	dp = diff --patience
-	dck = diff --cached --check
+	dcc = diff --cached --check
+	ds = diff --staged
 	#############
 	f = fetch
+	fa = fetch --all
 	fo = fetch origin
 	foa = fetch origin --all
 	fu = fetch upstream
@@ -105,10 +115,13 @@
 	ma = merge --abort
 	mc = merge --continue
 	ms = merge --skip
+	m8 = merge-octopus
 	#############
 	o = checkout
-	oh = checkout --
 	ob = checkout -b
+	oh = checkout --
+	ohh = checkout HEAD
+	ot = checkout --track
 	#############
 	pr = prune -v
 	#############
@@ -118,6 +131,8 @@
 	pso = push origin
 	psao = push --all origin
 	psfo = push -f origin
+	psod = push origin --delete
+	psot = push origin --tags
 	psuo = push -u origin
 	psom = push origin master
 	psfom = push -f origin master
@@ -129,6 +144,8 @@
 	plo = pull origin
 	plp = pull upstream
 	plom = pull origin master
+	plr = pull --rebase
+	plrom = pull --rebase origin master
 	plpm = pull upstream master
 	#############
 	pr = pull --rebase
@@ -152,22 +169,30 @@
 	remh = reset --mixed HEAD
 	resh = reset --soft HEAD
 	#############
+	rmc = rm --cached
+	#############
 	r = remote
 	ra = remote add
-	rr = remote rm
+	rrm = remote rm
 	rv = remote -v
-	rm = remote rename
+	rmv = remote rename
 	rp = remote prune
 	rs = remote show
 	rao = remote add origin
 	rau = remote add upstream
 	rso = remote show origin
 	rsu = remote show upstream
+	rp = remote prune
 	rpo = remote prune origin
 	rpu = remote prune upstream
+	rm = remote rename
+	rv = remote -v
+	rs = remote show
+	rso = remote show origin
+	rsu = remote show upstream
 	#############
 	s = status
-	sb = status -s -b
+	ss = status -s -b
 	#############
 	st = stash
 	sta = stash apply
@@ -177,6 +202,11 @@
 	stp = stash pop
 	sts = stash save
 	stw = stash show
+	#############
+	t = tag
+	ta = tag -am
+	tl = tag -l
+
 	#############
 	w = show
 	wp = show -p
