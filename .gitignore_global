@@ -74,6 +74,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+shrinkwrap.yaml
 
 # Typescript v1 declaration files
 typings/
