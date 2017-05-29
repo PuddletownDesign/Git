@@ -52,7 +52,7 @@
 	unstage = reset HEAD # unstage all files
 	lastcommit = reset --hard # revert to the last commit
 	prevcommit = reset HEAD^ --hard # revert to previous commit and lose last commit
-	
+
 
 	a = add
 	aa = add .
@@ -74,24 +74,22 @@
 	bv = branch -vva
 	#############
 	c = commit -m
-	ca = commit --amend --no-edit
+	cam = commit --amend --no-edit
 	cem = commit --allow-empty -m
-	cam = commit -am
-	cad = commit -a --amend
+	caa = commit -am # add all and commit
+	caaam = commit -a --amend
 	ced = commit --allow-empty --amend
 	#############
 	ch = cherry-pick
 	#############
 	cl = clone
 	#############
-	d = diff
-	dc = diff --cached
-	dt = difftool
-	dtc = difftool --cached
-	dch = diff --check
-	dp = diff --patience
-	dcc = diff --cached --check
-	ds = diff --staged
+	d = difftool
+	dc = difftool --cached
+	dch = difftool --check
+	dp = difftool --patience
+	dcc = difftool --cached --check
+	ds = difftool --staged
 	#############
 	f = fetch
 	fa = fetch --all
@@ -111,12 +109,12 @@
 	l = log --graph --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	la = log --graph --all --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	lb = log --graph --branches --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
+	ls = log --stat
 	#############
-	ls = ls-files
+
 	lsf = "!git ls-files | grep -i"
 	#############
-	m = merge
-	mt = mergetool
+	m = mergetool
 	ma = merge --abort
 	mc = merge --continue
 	ms = merge --skip
@@ -124,8 +122,8 @@
 	#############
 	o = checkout
 	ob = checkout -b
-	oh = checkout --
-	ohh = checkout HEAD
+	of = checkout --
+	oh = checkout HEAD
 	ot = checkout --track
 	#############
 	pr = prune -v
