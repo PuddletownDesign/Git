@@ -58,9 +58,9 @@
 	aa = add .
 	aac = commit -am
 	ai = add -i
-	ap = add --patch
+	ap = add -p
 	#############
-	ap = apply
+	app = apply
 	as = apply --stat
 	ac = apply --check
 	#############
@@ -126,6 +126,7 @@
 	ob = checkout -b
 	of = checkout --
 	oh = checkout HEAD
+	om = checkout master
 	ot = checkout --track
 	#############
 	pr = prune -v
@@ -163,6 +164,7 @@
 	rba = rebase --abort
 	rbc = rebase --continue
 	rbi = rebase --interactive
+	rbm = rebase master
 	rbs = rebase --skip
 	#############
 	re = reset
