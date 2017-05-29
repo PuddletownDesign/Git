@@ -74,6 +74,11 @@
 	br = branch -r
 	bv = branch -vva
 	#############
+	bs = bisect
+	bsb = bisect bad
+	bsg = bisect good
+	bss = bisect start
+	#############
 	c = commit -m
 	cam = commit --amend --no-edit
 	cem = commit --allow-empty -m
@@ -200,8 +205,9 @@
 	rso = remote show origin
 	rsu = remote show upstream
 	#############
-	s = status
-	ss = status -s -b
+	s = status -s -b
+	ss = status  #long status
+
 	#############
 	st = stash
 	sta = stash apply
@@ -210,7 +216,7 @@
 	stl = stash list
 	stp = stash pop
 	sts = stash save
-	stw = stash show
+	stsh = stash show
 	#############
 	t = tag
 	ta = tag -am
