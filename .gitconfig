@@ -56,7 +56,7 @@
 
 	a = add
 	aa = add .
-	aac = commit -a -m
+	aac = commit -am
 	ai = add -i
 	ap = add -p
 	#############
@@ -84,6 +84,8 @@
 	ch = cherry-pick
 	#############
 	cl = clone
+	#############
+	cleanup = clean -fd
 	#############
 	d = difftool
 	dc = difftool --cached
