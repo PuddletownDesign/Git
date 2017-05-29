@@ -56,7 +56,7 @@
 
 	a = add
 	aa = add .
-	aac = commit -am
+	aac = commit -a -m
 	ai = add -i
 	ap = add -p
 	#############
