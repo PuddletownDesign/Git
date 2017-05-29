@@ -56,6 +56,7 @@
 
 	a = add
 	aa = add .
+	aac = commit -am
 	ai = add -i
 	ap = add --patch
 	#############
@@ -114,7 +115,8 @@
 
 	lsf = "!git ls-files | grep -i"
 	#############
-	m = mergetool
+	m = merge
+	mt = mergetool
 	ma = merge --abort
 	mc = merge --continue
 	ms = merge --skip
@@ -164,8 +166,8 @@
 	rbs = rebase --skip
 	#############
 	re = reset
-	reh = reset HEAD
-	rehh = reset --hard
+	# reh = reset HEAD
+	reh = reset --hard
 	rem = reset --mixed
 	res = reset --soft
 	rehh = reset --hard HEAD
