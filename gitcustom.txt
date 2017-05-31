@@ -114,6 +114,7 @@
 	la = log --graph --all --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	lb = log --graph --branches --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	ls = log --stat
+	rl = reflog
 	#############
 
 	lsf = "!git ls-files | grep -i"
@@ -154,7 +155,7 @@
 	plp = pull upstream
 	plom = pull origin master
 	plr = pull --rebase
-	plrom = pull --rebase origin master
+	plomr = pull --rebase origin master
 	plpm = pull upstream master
 	#############
 	pr = pull --rebase
