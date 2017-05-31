@@ -205,8 +205,8 @@
 	rso = remote show origin
 	rsu = remote show upstream
 	#############
-	s = status -s -b
-	ss = status  #long status
+	ss = status -s -b
+	s = status  #long status
 
 	#############
 	st = stash
