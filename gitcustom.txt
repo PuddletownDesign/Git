@@ -1,7 +1,3 @@
-[user]
-    name = Brent
-    username = PuddletownDesign
-    email = puddletowndesign@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
     editor = "atom -w"
