@@ -125,7 +125,7 @@
 	mc = merge --continue
 	mo = merge -s ours
 	ms = merge --skip
-	mt = merge -s theirs
+	mtt = merge -s theirs
 	m8 = merge-octopus
 	#############
 	o = checkout
