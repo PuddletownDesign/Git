@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ~/Documents/Dev/Git
+cd ~/Dev/Config/Git
 git pull origin mac
