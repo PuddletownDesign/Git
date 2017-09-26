@@ -2,17 +2,27 @@
 
 ## Install
 
-Download the file or fork the repo
-
 ```bash
-wget https://github.com/PuddletownDesign/Git/blob/mac/gitcustom.txt
+take ~/Dev/Config
+
+git clone <your-forked-git-repo>
+
+cd Git
+
+./install.sh
+
+touch .gitconfig
 ```
 
-In your git config add `gitcustom.txt` to your config file
+Edit your `.gitconfig` file for yourself in `~/Dev/Config/Git`
 
-```git
+```bash
+[user]
+    name = <Your name>
+    username = <Your github username>
+    email = <Your email>
 [include]
-	path = ~/gitcustom.txt
+	path = ~/Dev/Config/Git/gitcustom.txt
 ```
 
 ## List of Aliases
