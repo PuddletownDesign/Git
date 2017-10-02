@@ -45,10 +45,10 @@
     # let's you say just `git push origin` to push the current branch
     default = current
 [alias]
-	unstage = reset HEAD # unstage all files
+	unstage = reset HEAD --
 	lastcommit = reset --hard # revert to the last commit
 	prevcommit = reset HEAD^ --hard # revert to previous commit and lose last commit
-
+    ammend = commit --amend --no-edit
 
 	a = add
 	aa = add .
