@@ -1,0 +1,6 @@
+[user]
+    name = 
+    username = 
+    email = 
+[include]
+	path = ~/Dev/Config/Git/gitcustom.txt

@@ -1,6 +1,0 @@
-[user]
-    name = Brent
-    username = PuddletownDesign
-    email = puddletowndesign@gmail.com
-[include]
-	path = ~/Dev/Config/Git/gitcustom.txt
