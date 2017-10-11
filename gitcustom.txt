@@ -146,6 +146,9 @@
 	psod = push origin --delete
 	psot = push origin --tags
 	psuo = push -u origin
+    psdm = push dev master
+    pstm = push testing master
+    pslm = push live master
 	psom = push origin master
 	psfom = push -f origin master
 	psuom = push -u origin master
