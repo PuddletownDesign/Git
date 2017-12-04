@@ -1,5 +1,5 @@
 [core]
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/Dev/Config/Git/.gitignore_global
     editor = "atom -w"
 [filter "media"]
     required = true
