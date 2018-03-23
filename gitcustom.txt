@@ -189,9 +189,9 @@
 	#############
 	r = remote
 	ra = remote add
+    rr = remote rename
 	rrm = remote rm
 	rv = remote -v
-	rmv = remote rename
 	rp = remote prune
 	rs = remote show
 	rao = remote add origin
@@ -201,7 +201,6 @@
 	rp = remote prune
 	rpo = remote prune origin
 	rpu = remote prune upstream
-	rm = remote rename
 	rv = remote -v
 	rs = remote show
 	rso = remote show origin
