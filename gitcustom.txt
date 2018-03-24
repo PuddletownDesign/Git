@@ -108,7 +108,8 @@
 	g = grep -p
 	#############
 	i = init
-	ib = init --bare
+	ib = init --bare --share
+    ibs = init --bare --share
 	#############
 	l = log --graph --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
 	la = log --graph --all --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit
