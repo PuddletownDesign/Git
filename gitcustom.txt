@@ -81,6 +81,7 @@
 	caa = commit -am # add all and commit
 	caaam = commit -a --amend
 	ced = commit --allow-empty --amend
+    cne = commit --no-edit
 	#############
 	ch = cherry-pick
 	#############
@@ -117,7 +118,6 @@
 	ls = log --stat
 	rl = reflog
 	#############
-
 	lsf = "!git ls-files | grep -i"
 	#############
 	m = merge
@@ -134,7 +134,8 @@
 	of = checkout --
 	oh = checkout HEAD
 	om = checkout master
-	ot = checkout --track
+    oo = checkout --ours
+	ot = checkout --theirs
 	#############
 	pr = prune -v
 	#############
@@ -177,7 +178,7 @@
 	rbm = rebase master
 	rbs = rebase --skip
 	#############
-	re = reset
+	re = reset HEAD
 	# reh = reset HEAD
 	reh = reset --hard
 	rem = reset --mixed
@@ -186,6 +187,10 @@
 	remh = reset --mixed HEAD
 	resh = reset --soft HEAD
 	#############
+    rev = revert
+    revh = revert HEAD --no-edit
+    
+    #############
 	rmc = rm --cached
 	#############
 	r = remote
