@@ -68,7 +68,7 @@
 	bd = branch -d
 	bD = branch -D
 	br = branch -r
-	bv = branch -vva
+	bv = branch -va
 	#############
 	bs = bisect
 	bsb = bisect bad
