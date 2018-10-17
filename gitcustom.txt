@@ -76,7 +76,7 @@
 	bss = bisect start
 	#############
 	c = commit -m
-	cam = commit --amend --no-edit
+	cam = commit --amend -m
 	cem = commit --allow-empty -m
 	caa = commit -am # add all and commit
 	caaam = commit -a --amend
