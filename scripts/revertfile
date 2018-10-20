@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+FILE=${1?Error: no name given}
+
+function revertfile() {
+    git checkout HEAD^ $FILE
+    git add $FILE
+    git commit --amend --no-edit
+    echo $FILE "reverted from last commit" 
+}
+
+revertfile $FILE
+exit 0

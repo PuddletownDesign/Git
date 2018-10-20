@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+BRANCH=${1?Error: no name given}
+
+function movechangestonewbranch() {
+    git stash
+    git checkout $BRANCH
+    git stash pop
+    echo "moved unstaged edits to " $BRANCH " branch"
+}
+
+movechangestonewbranch $FILE
+exit 0
