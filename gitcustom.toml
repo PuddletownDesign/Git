@@ -1,5 +1,5 @@
 [core]
-    excludesfile = ~/Dev/Config/Git/.gitignore_global
+    excludesfile = ~/Config/Git/gitignore_global
     editor = "atom -w"
 [filter "media"]
     required = true
@@ -189,7 +189,7 @@
 	#############
     rev = revert
     revh = revert HEAD --no-edit
-    
+
     #############
 	rmc = rm --cached
 	#############

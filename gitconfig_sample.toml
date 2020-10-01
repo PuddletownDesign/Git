@@ -1,0 +1,6 @@
+[user]
+    name =
+    username =
+    email =
+[include]
+	path = ~/Config/Git/gitcustom.toml
