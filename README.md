@@ -1,20 +1,22 @@
 # Custom git configuration
 
-## Install
+## Installation
+
+Unlike some of my other configurations git has universal settings for both Mac and Linux. There is only one `master` branch.
 
 ```bash
-take ~/Dev/Config
+take ~/Config
 
 git clone <your-forked-git-repo>
 
 cd Git
 
 ./install.sh
-
-touch .gitconfig
 ```
 
-Edit your `.gitconfig` file for yourself in `~/Dev/Config/Git`
+The installer will ask you for your github username, your name and your email address that will be included in git commits.
+
+~~Edit your `.gitconfig` file for yourself in `~/Config/Git`~~
 
 ```bash
 [user]
@@ -22,7 +24,7 @@ Edit your `.gitconfig` file for yourself in `~/Dev/Config/Git`
     username = <Your github username>
     email = <Your email>
 [include]
-	path = ~/Dev/Config/Git/gitcustom.txt
+	path = ~/Config/Git/gitcustom.txt
 ```
 
 ## List of Aliases
