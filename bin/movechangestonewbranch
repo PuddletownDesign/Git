@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-BRANCH=${1?Error: no branch name given}
-
-git checkout -b $BRANCH
