@@ -3,4 +3,4 @@
     username =
     email =
 [include]
-	path = ~/Files/Config/Git/gitcustom.toml
+	path = ~/Config/Git/gitcustom.toml
