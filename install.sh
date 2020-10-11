@@ -10,7 +10,7 @@ cp gitconfig_sample.toml gitconfig.toml
 
 
 # Trash the sample file as it's been copied
-rm gitconfig_sample.toml
+# rm gitconfig_sample.toml
 
 # Remove the any git files int he home directory
 rm ~/.gitconfig
