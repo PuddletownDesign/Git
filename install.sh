@@ -13,8 +13,8 @@ cp gitconfig_sample.toml gitconfig.toml
 # rm gitconfig_sample.toml
 
 # Remove the any git files int he home directory
-rm ~/.gitconfig
-rm ~/.gitignore_global
+rm ~/.gitconfig 2> /dev/null
+rm ~/.gitignore_global 2> /dev/null
 
 ln -s ~/Files/Config/Git/gitconfig.toml ~/.gitconfig
 ln -s ~/Files/Config/Git/gitignore_global.toml ~/.gitignore_global
