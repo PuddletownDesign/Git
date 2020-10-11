@@ -236,5 +236,6 @@ snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 
 -   [x] create a master branch
 -   [x] Delete branches mac and linux
+-   [x] move the binaries folder over to the development branch
 -   [ ] Make a prompt asking the user for their git info in the installer
 -   [ ] Update the script to allow the user to install it in any location that they wish
