@@ -16,7 +16,7 @@ cp gitconfig_sample.toml gitconfig.toml
 rm ~/.gitconfig 2> /dev/null
 rm ~/.gitignore_global 2> /dev/null
 
-ln -s ~/Files/Config/Git/gitconfig.toml ~/.gitconfig
-ln -s ~/Files/Config/Git/gitignore_global.toml ~/.gitignore_global
+ln -s ~/Config/Git/gitconfig.toml ~/.gitconfig
+ln -s ~/Config/Git/gitignore_global.toml ~/.gitignore_global
 
 git remote add upstream https://github.com/PuddletownDesign/Git
