@@ -18,6 +18,9 @@ composer.phar
 
 # Icon must end with two \r
 Icon
+icon?
+icon\r
+icon\r\r
 
 # Thumbnails
 ._*
